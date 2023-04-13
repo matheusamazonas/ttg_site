@@ -172,7 +172,7 @@ Technical aspects of TTG were described in the following blogs posts:
 - [Terraced Terrain Generator performance improvements](https://www.matheusamazonas.net/blog/2023/04/09/ttg-performance){:target="_blank"}.
 
 ## Contributing
-If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/ttg/issues){:target="_blank"}. If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless ff it's in the roadmap or not),  [contact the developer](https://matheusamazonas.net/contact.html){:target="_blank"}.  
+If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/ttg/issues){:target="_blank"}. If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless if it's in the roadmap or not),  [contact the developer](https://matheusamazonas.net/contact.html){:target="_blank"}.  
 
 ## Getting help
 Use the [issues page](https://github.com/matheusamazonas/ttg/issues){:target="_blank"} if there's a problem with your TTG setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
