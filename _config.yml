@@ -15,8 +15,3 @@ plugins:
 # Theme settings
 minima:
   skin: dark
-  social_links:
-    github: matheusamazonas
-    linkedin: matheusamazonas
-    youtube_channel: UCiCD4qB_TAvFBYOWPmHCfPg
-    youtube_channel_name: Matheus Amazonas
