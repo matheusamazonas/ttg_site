@@ -178,4 +178,4 @@ If you would like to report e bug, please create an [issue](https://github.com/m
 Use the [issues page](https://github.com/matheusamazonas/ttg/issues){:target="_blank"} if there's a problem with your TTG setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
 
 ## License
-Terraced Terrain Generator is distributed under the terms of the MIT license. For more information, check the [LICENSE](LICENSE) file in this repository.
+Terraced Terrain Generator is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/TTG/blob/develop/LICENSE){:target="_blank"} file in TTG's repository.
