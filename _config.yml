@@ -3,7 +3,20 @@ tagline: Terraced Terrain Generator (TTG)
 description: Terraced Terrain Generator (TTG) is a Unity tool for procedural generation of terraced terrains.
 baseurl: /
 url: ttg.matheusamazonas.net
-theme: minima
 homepage: /index.html
 sass:
   style: compressed
+
+# Build settings
+remote_theme: jekyll/minima@fdc3aba23a1d59ad1d1f65f505693848c4b82fdf
+plugins:
+  - jekyll-remote-theme
+
+# Theme settings
+minima:
+  skin: dark
+  social_links:
+    github: matheusamazonas
+    linkedin: matheusamazonas
+    youtube_channel: UCiCD4qB_TAvFBYOWPmHCfPg
+    youtube_channel_name: Matheus Amazonas
