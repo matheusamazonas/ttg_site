@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Home
 ---
 
 # Terraced Terrain Generator (TTG)
