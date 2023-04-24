@@ -5,7 +5,7 @@ title: Home
 
 # Terraced Terrain Generator (TTG)
 
-Terraced Terrain Generator (TTG) is a Unity tool for procedural generation of terraced terrain meshes. It's open source and it's on [GitHub](https://github.com/matheusamazonas/TTG){:target="_blank"}!
+Terraced Terrain Generator (TTG) is a free Unity tool for procedural generation of terraced terrain meshes. It's open source and it's on [GitHub](https://github.com/matheusamazonas/TTG){:target="_blank"}!
 
 ![Five images of generated terraced terrains looping.](assets/images/loop.gif)
 
