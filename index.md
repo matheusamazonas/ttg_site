@@ -206,9 +206,9 @@ TTG requires Unity 2022.3.X or above, its target API compatibility level is .NET
 
 ## Roadmap
 Although the first version of TTG is out, it's still under (casual) development. The following features are planned in the next versions:
-- Custom terrain heights: instead of evenly spacing the terraces between the terrain's lowest and highest points, allow custom heights to be chosen.
+- ~~Custom terrain heights: instead of evenly spacing the terraces between the terrain's lowest and highest points, allow custom heights to be chosen.~~ Implemented on version 1.1.0.
+- ~~Improve terrain detailing: use Perlin noise octaves to create more natural terrains.~~ Implemented on version 1.2.0.
 - Sphere as a basic shape: let's create completely terraced planets!
-- Improve terrain detailing: use Perlin noise octaves to create more natural terrains.
 - Real-time sculpting: instead of letting an algorithm generate the hills, let the user interactively sculpt them.
 - Outer walls: “close” the generated mesh so it looks like a model carved in wood, sitting on a desk. 
 
@@ -221,7 +221,7 @@ Technical aspects of TTG were described in the following blogs posts:
 - [Terraced Terrain Generator performance improvements](https://www.matheusamazonas.net/blog/2023/04/09/ttg-performance).
 
 ## Contributing
-If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/ttg/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless if it's in the roadmap or not),  [contact the developer](https://matheusamazonas.net/contact.html).  
+If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/ttg/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless if it's in the roadmap or not), [contact the developer](https://matheusamazonas.net/contact.html).  
 
 ## Getting help
 Use the [issues page](https://github.com/matheusamazonas/ttg/issues) if there's a problem with your TTG setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
