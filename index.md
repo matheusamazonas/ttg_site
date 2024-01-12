@@ -5,7 +5,7 @@ title: Home
 
 # Terraced Terrain Generator (TTG)
 
-Terraced Terrain Generator (TTG) is a free Unity tool for procedural generation of terraced terrain meshes. It's open source and it's on [GitHub](https://github.com/matheusamazonas/TTG){:target="_blank"}!
+Terraced Terrain Generator (TTG) is a free Unity tool for procedural generation of terraced terrain meshes. It's open source and it's on [GitHub](https://github.com/matheusamazonas/TTG)!
 
 ![Five images of generated terraced terrains looping.](assets/images/loop.gif)
 
@@ -59,7 +59,7 @@ https://github.com/matheusamazonas/ttg.git?path=Assets/Libraries/TerracedTerrain
 Finally, click on the "Add" button. The importing process should start automatically. Once it's done, TTG is ready to be used in the project. 
 
 ### Import with OpenUPM
-TTG is available as a package on [OpenUPM](https://openupm.com/packages/com.sneakysquirrellabs.terracedterraingenerator/){:target="_blank"}. To import TTG into your project via the command line, run the following command:
+TTG is available as a package on [OpenUPM](https://openupm.com/packages/com.sneakysquirrellabs.terracedterraingenerator/). To import TTG into your project via the command line, run the following command:
 ```
 openupm add com.sneakysquirrellabs.terracedterraingenerator
 ```
@@ -192,19 +192,19 @@ Although the first version of TTG is out, it's still under (casual) development.
 - Real-time sculpting: instead of letting an algorithm generate the hills, let the user interactively sculpt them.
 - Outer walls: “close” the generated mesh so it looks like a model carved in wood, sitting on a desk. 
 
-You can follow TTG's development progress on its [Trello board](https://trello.com/b/cFRtgqal/terracted-terrain-generator){:target="_blank"}.
+You can follow TTG's development progress on its [Trello board](https://trello.com/b/cFRtgqal/terracted-terrain-generator).
 
 ## Technical aspects
 Technical aspects of TTG were described in the following blogs posts:
 
-- [Developing a Terraced Terrain Generator](https://www.matheusamazonas.net/blog/2023/04/08/ttg){:target="_blank"}.
-- [Terraced Terrain Generator performance improvements](https://www.matheusamazonas.net/blog/2023/04/09/ttg-performance){:target="_blank"}.
+- [Developing a Terraced Terrain Generator](https://www.matheusamazonas.net/blog/2023/04/08/ttg).
+- [Terraced Terrain Generator performance improvements](https://www.matheusamazonas.net/blog/2023/04/09/ttg-performance).
 
 ## Contributing
-If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/ttg/issues){:target="_blank"}. If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless if it's in the roadmap or not),  [contact the developer](https://matheusamazonas.net/contact.html){:target="_blank"}.  
+If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/ttg/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless if it's in the roadmap or not),  [contact the developer](https://matheusamazonas.net/contact.html).  
 
 ## Getting help
-Use the [issues page](https://github.com/matheusamazonas/ttg/issues){:target="_blank"} if there's a problem with your TTG setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
+Use the [issues page](https://github.com/matheusamazonas/ttg/issues) if there's a problem with your TTG setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
 
 ## License
-Terraced Terrain Generator is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/TTG/blob/master/LICENSE){:target="_blank"} file in TTG's repository.
+Terraced Terrain Generator is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/TTG/blob/master/LICENSE) file in TTG's repository.
