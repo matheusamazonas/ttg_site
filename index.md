@@ -201,7 +201,7 @@ The package contains three samples:
 To import the samples, open the Package Manager and select TTG in the packages list. Then find the Samples section on the right panel, and click on the "Import" button right next to the sample you would like to import. Once importing is finished, navigate to the `Assets/Samples/Terraced Terrain Generator` folder. Finally, open and play the scene from the sample you would like to test.
 
 ## Compatibility and dependencies
-TTG requires Unity 2021.3.X or above, its target API compatibility level is .NET Standard 2.1, and depends on the following packages:
+TTG requires Unity 2022.3.X or above, its target API compatibility level is .NET Standard 2.1, and depends on the following packages:
 - `com.unity.collections`
 
 ## Roadmap
