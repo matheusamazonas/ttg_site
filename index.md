@@ -30,13 +30,18 @@ Terraced Terrain Generator (TTG) is a free Unity tool for procedural generation 
 - Pseudorandom procedural terrain generation.
 - Deterministic procedural terrain generation with parameterized seed.
 - Both synchronous and asynchronous (with `async`/`await`) support.
-- Reduced GC allocations using native constructs delivered by Unity's [Collections package](https://docs.unity3d.com/Packages/com.unity.collections@1.2/manual/index.html){:target="_blank"} (e.g. `NativeArray<T>` and `NativeList<T>`).
+- Reduced GC allocations using native constructs delivered by Unity's [Collections package](https://docs.unity3d.com/Packages/com.unity.collections@1.2/manual/index.html) (e.g. `NativeArray<T>` and `NativeList<T>`).
 - Customizable:
 	- Basic terrain shapes from 3 to 10 sizes.
-	- Number of terraces (1 to 50).
+	- Number of terraces.
 	- Terrain size (radius and height).
 	- Detail level (a.k.a. fragmentation depth).
-	- Feature (hills and valleys) frequency.
+	- Sculpting features (hills and valleys)
+		- Octaves.
+		- Base frequency.
+		- Persistence (>1 octave).
+		- Lacunarity (>1 octave).
+	- Terrace heights.
 	- Height distribution.
 
 ## Importing
