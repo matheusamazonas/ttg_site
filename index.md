@@ -29,17 +29,17 @@ Terraced Terrain Generator (TTG) is a free Unity tool for procedural generation 
 - Pseudorandom procedural terrain generation.
 - Deterministic procedural terrain generation with parameterized seed.
 - Both synchronous and asynchronous (with `async`/`await`) support.
-- Reduced GC allocations using native constructs delivered by Unity's [Collections package](https://docs.unity3d.com/Packages/com.unity.collections@1.2/manual/index.html) (e.g. `NativeArray<T>` and `NativeList<T>`).
+- Reduced GC allocations using native constructs (e.g. `NativeArray` and `NativeList`).
 - Customizable:
-	- Basic terrain shapes from 3 to 10 sizes.
+	- Basic terrain shape from 3 to 10 sizes.
 	- Number of terraces.
 	- Terrain size (radius and height).
 	- Detail level (a.k.a. fragmentation depth).
-	- Sculpting features (hills and valleys)
-		- Octaves.
+	- Sculpting features (hills and valleys):
 		- Base frequency.
-		- Persistence (>1 octave).
-		- Lacunarity (>1 octave).
+		- Octaves.
+		- Persistence (more than 1 octave).
+		- Lacunarity (more than 1 octave).
 	- Terrace heights.
 	- Height distribution.
 
@@ -77,8 +77,8 @@ There are two different ways to use TTG: via the `TerrainGeneratorController` co
 - **Sculpt settings**: a group of settings used to sculpt the terrain—the process of creating hills and valleys using Perlin noise. These settings include:
 	- **Base feature frequency**: the number of terrain features (hills and valleys) in a given area on the first iteration (a.k.a. octave) of the sculpting process. This value must be greater than zero.
 	- **Octave count**: how many iterations of the sculpting process will be performed. Each iteration will be performed with a lower intensity and higher frequency as the previous one. This value must be greater than zero. When this value is 1, persistence and lacunarity are ignored.
-	- **Persistence**: how much of an octave's amplitude ("strength") will be carried to the next octave. The lower the value, the quicker octave details disappear with each iteration. This value must be in the (0, 1) range.
-	- **Lacunarity**: how much the frequency increases (multiplication factor) between octaves. In other words, how much detail each octave will contain, when compared to the previous one. This value must be greater than one.
+	- **Persistence**: how much of an octave's amplitude (a.k.a. "strength") will be carried to the next octave. The lower the value, the quicker octave details disappear with each iteration. This value must be in the (0, 1) range.
+	- **Lacunarity**: how much the frequency increases (multiplication factor) between octaves. In other words, how much more detail each octave will contain, when compared to the previous one. This value must be greater than one.
 	- **Height distribution**:  the height distribution over the terrain. In short, how low valleys and how high hills should be, and everything in between. It's represented as a curve that must start in (0,0) and end in (1,1). If this value is null, a canonical value (a linear curve that won't affect the distribution) will be used.
 
 The two usage methods will differ only on how they provide these parameters and how they use the terrain generation output.
@@ -157,11 +157,12 @@ It's important to point out that the user is responsible for resource management
 And that's it. No other types or methods are exposed. The ones above are sufficient to use all TTG features via the API.
 
 #### Example 
-Let's say we would like to generate random octagonal terrains with 5 terraces, 20 units radius, maximum height of 9.5 units, a feature frequency of 0.075 and a fragmentation depth of 4. First, let's create the height distribution curve. For real-world usage, it would be handy to serialize this curve so it's easily editable in the inspector. Here, for the sake of simplicity, let's use a linear curve declared in code:
+Let's say we would like to generate random octagonal terrain with 5 terraces, 20 units radius, maximum height of 9.5 units and a fragmentation depth of 4. For sculpting, we would like 5 octaves, a base frequency of 0.075, a persistence of 0.375 and a lacunarity of 2.52. 
+First, let's create the height distribution curve. For real-world usage, it would be handy to serialize this curve so it's easily editable in the inspector. Here, for the sake of simplicity, let's use a linear curve declared in code:
 ```csharp
 var heightDistribution = AnimationCurve.Linear(0f, 0f, 1f, 1f);
 ```
-To create the sculpt settings, we first pass the feature frequency (0.075) followed by the height distribution created on the step above:
+To create the sculpt settings, we first pass the feature frequency (0.075), followed by the number of octaves (5), the persistence (0.375), the lacunarity (2.52) and finally, the height distribution created on the step above:
 ```csharp
 var sculptSettings = new SculptSettings(0.075f, 5, 0.375f, 2.52f, heightDistribution);
 ```
@@ -169,7 +170,7 @@ Next, let's choose the relative terrain heights for the 5 terraces:
 ```csharp
 var relativeHeights = new[] { 0f, 0.2f, 0.6f, 0.87f, 1f };
 ```
-Finally, let's call the `TerrainGenerator` constructor to create the generator, passing the number of sides of the terrain's basic shape (8 for octagon), the radius (20), the maximum height (9.5),  the previously created relative terrace heights and sculpt settings and the fragmentation depth (4).
+Finally, let's call the `TerrainGenerator` constructor to create the generator, passing the number of sides of the terrain's basic shape (8 for octagon), the radius (20), the maximum height (9.5),  the previously created relative terrace heights and sculpt settings, and the fragmentation depth (4).
 ```csharp
 var generator = new TerrainGenerator(8, 20, 9.5f, relativeHeights, sculptSettings, 4);
 ```
