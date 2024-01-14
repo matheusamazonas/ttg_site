@@ -81,7 +81,6 @@ There are two different ways to use TTG: via the `TerrainGeneratorController` co
 	- **Lacunarity**: how much the frequency increases (multiplication factor) between octaves. In other words, how much detail each octave will contain, when compared to the previous one. This value must be greater than one.
 	- **Height distribution**:  the height distribution over the terrain. In short, how low valleys and how high hills should be, and everything in between. It's represented as a curve that must start in (0,0) and end in (1,1). If this value is null, a canonical value (a linear curve that won't affect the distribution) will be used.
 
-
 The two usage methods will differ only on how they provide these parameters and how they use the terrain generation output.
 
 ### Component-based usage
@@ -102,9 +101,9 @@ This component contains all parameters explained in the previous section, in add
 public void GenerateTerrain();
 // For pseudorandom asynchronous generation:
 public async Task GenerateTerrainAsync(CancellationToken token);
-// For predictable, synchronous generation:
+// For reproducible synchronous generation:
 public void GenerateTerrain(int seed);
-// For predictable asynchronous generation:
+// For reproducible asynchronous generation:
 public async Task GenerateTerrainAsync(int seed, CancellationToken token);
 ```
 
