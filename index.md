@@ -53,7 +53,7 @@ This approach uses Unity's Package Manager to add TTG to your project using the 
 
 Next, enter the following in the "URL" input field to install the latest version of TTG:
 ```
-https://github.com/matheusamazonas/ttg.git?path=Assets/Libraries/TerracedTerrainGenerator#latest
+https://github.com/matheusamazonas/ttg.git?path=Assets/Libraries/TerracedTerrainGenerator
 ```
 Finally, click on the "Add" button. The importing process should start automatically. Once it's done, TTG is ready to be used in the project. 
 
