@@ -108,7 +108,7 @@ public void GenerateTerrain(int seed);
 public async Task GenerateTerrainAsync(int seed, CancellationToken token);
 ```
 
-The first two methods are meant for pseudorandom procedural generation—when the generated terrain doesn't need to be reproduced in the future. The other methods are meant for reproducible procedural generation—when we would like to generate the exact same terrain in the future. The `seed` parameter will be used to feed the randomizer and it's enough to reproduce an entire terrain. If you're aiming for reproducible terrains, use the last two methods. The task of generating random seed values is up to the user. The asynchronous methods support task cancellation via a cancellation token. If the token's source is cancelled, a `TaskCanceledException` might be thrown.
+The first two methods are meant for pseudorandom procedural generation—when the generated terrain doesn't need to be reproduced in the future. The other methods are meant for reproducible procedural generation—when we would like to generate the exact same terrain in the future. The `seed` parameter will be used to feed the randomizer and it's enough to reproduce an entire terrain. If you're aiming for reproducible terrains, use the last two methods. The task of generating random seed values is up to the user. The asynchronous methods support task cancellation via a cancellation token. If the token's source is cancelled, an `OperationCanceledException` might be thrown.
 
 The controller manages the lifetime of the meshes it generates, and it destroys them once they're not being used anymore (including when the component itself is destroyed). If you would like to manage mesh lifetime yourself, use the API (described below) instead.
 
@@ -151,7 +151,7 @@ public Mesh GenerateTerrain();
 // For asynchronous generation
 public async Task<Mesh> GenerateTerrainAsync(CancellationToken token);
 ```
-The asynchronous method supports task cancellation via a cancellation token. If the token's source is cancelled, a `TaskCanceledException` might be thrown.
+The asynchronous method supports task cancellation via a cancellation token. If the token's source is cancelled, an `OperationCanceledException` might be thrown.
 
 It's important to point out that the user is responsible for resource management (in this case, meshes). The API doesn't automatically clean terrain meshes up. 
 
