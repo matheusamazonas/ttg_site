@@ -73,7 +73,7 @@ There are two different ways to use TTG: via the `TerrainGeneratorController` co
 - **Radius**: the greatest distance between the center of the mesh and all of its vertices (ignoring their position's Y coordinate). This number must be greater than zero.
 - **Fragmentation depth**: how many times the basic shape will be fragmented to form the terrain. The larger the value, the greater the level of detail will be (more triangles and vertices) and the longer the generation process takes.
 - **Maximum height**: the maximum distance between the lowest and highest vertices of the terrain. This number must be greater than zero.
-- **Relative terrace heights**: an array of terrace heights, relative to the terrain's maximum height. Values must be in the  \[0, 1] range, in ascending order. Each terrace's final height will be calculated by multiplying the relative height by the terrain's height. The length of this array dictates how many terraces will be generated.
+- **Relative terrace heights**: an array of terrace heights, relative to the terrain's maximum height. Values must be in the \[0, 1] range, in ascending order. Each terrace's final height will be calculated by multiplying the relative height by the terrain's height. The length of this array dictates how many terraces will be generated.
 - **Sculpt settings**: a group of settings used to sculpt the terrain—the process of creating hills and valleys using Perlin noise. These settings include:
 	- **Base feature frequency**: the number of terrain features (hills and valleys) in a given area on the first iteration (a.k.a. octave) of the sculpting process. This value must be greater than zero.
 	- **Octave count**: how many iterations of the sculpting process will be performed. Each iteration will be performed with a lower intensity and higher frequency as the previous one. This value must be greater than zero. When this value is 1, persistence and lacunarity are ignored.
@@ -216,8 +216,8 @@ You can follow TTG's development progress on its [Trello board](https://trello.c
 ## Technical aspects
 Technical aspects of TTG were described in the following blogs posts:
 
-- [Developing a Terraced Terrain Generator](https://www.matheusamazonas.net/blog/2023/04/08/ttg).
-- [Terraced Terrain Generator performance improvements](https://www.matheusamazonas.net/blog/2023/04/09/ttg-performance).
+- [Developing a Terraced Terrain Generator](https://blog.matheusamazonas.net/posts/ttg).
+- [Terraced Terrain Generator performance improvements](https://blog.matheusamazonas.net/posts/ttg_performance).
 
 ## Contributing
 If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/ttg/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless if it's in the roadmap or not), [contact the developer](https://matheusamazonas.net/contact.html).  
