@@ -69,7 +69,7 @@ Once the importing process is complete, TTG is ready to be used in the project.
 After importing TTG, check the [Usage](#usage) section on how to use it and the [Samples](#samples) section on how to import and use the package samples.
 
 ## Usage
-There are two different ways to use TTG: via controller components (`SphericalTerrainGeneratorController` and `PlanarTerrainGeneratorController`) or via the API. Both methods share the same parameter list, explained below.
+There are two different ways to use TTG: via controller components or via the API. Both methods share the same parameter list, explained below.
 - **Fragmentation depth**: how many times the basic shape will be fragmented to form the terrain. The larger the value, the greater the level of detail will be (more triangles and vertices) and the longer the generation process takes.
 - **Relative terrace heights**: an array of terrace heights, relative to the terrain's maximum height. Values must be in the \[0, 1] range, in ascending order. Each terrace's final height will be calculated by multiplying the relative height by the terrain's height. The length of this array dictates how many terraces will be generated.
 - **Sculpt settings**: a group of settings used to sculpt the terrain—the process of creating hills and valleys using Perlin noise. These settings include:
