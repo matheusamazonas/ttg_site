@@ -86,7 +86,8 @@ The two usage methods will differ only on how they provide these parameters and 
 ### Component-based usage
 The easier way to jump into TTG is to use its controller component. To start using it, add the `TerrainGeneratorController` component to a game object. A Mesh Renderer and a Mesh Filter will be added automatically if the game object doesn't contain them yet. The picture below displays an example of the controller on Unity's inspector:
 
-![A view of Unity's inspector showing a component called "Terrain Generator Controller" with several fields](assets/images/controller.png)
+![A view of Unity's inspector showing a component called "Planar Terrain Generator Controller" with several fields](assets/images/planar_controller.png)
+![A view of Unity's inspector showing a component called "Spherical Terrain Generator Controller" with several fields](assets/images/spherical_controller.png)
 This component contains all parameters explained in the previous section, in addition to the following fields:
 - Generate on start: whether a new terrain should be generated on start. This feature is great to quickly test generation parameters.
 - Renderer: the `MeshRenderer` that will be used to render the terrain.
