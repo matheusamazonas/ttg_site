@@ -4,7 +4,7 @@ title: Home
 ---
 
 # Terraced Terrain Generator (TTG)
-Terraced Terrain Generator (TTG) is a free Unity tool for procedural generation of spherical and planar terraced terrain meshes. It's open source and it's on [GitHub](https://github.com/matheusamazonas/TTG)!
+Terraced Terrain Generator (TTG) is a free Unity tool for procedural generation of spherical and planar terraced terrain meshes. It's open source and it's on [GitHub](https://github.com/lazysquirrellabs/TTG)!
 
 ![An image containing 6 terraced terrains: 3 spheres and 3 planes. The spheres are placed side-by-side, on the top of the image. The planes are also placed side-by-side, on the bottom of the image.](assets/images/banner.png)
 
@@ -54,7 +54,7 @@ This approach uses Unity's Package Manager to add TTG to your project using the 
 
 Next, enter the following in the "URL" input field to install the latest version of TTG:
 ```
-https://github.com/matheusamazonas/ttg.git?path=Assets/Libraries/TerracedTerrainGenerator
+https://github.com/lazysquirrellabs/ttg.git?path=Assets/Libraries/TerracedTerrainGenerator
 ```
 Finally, click on the "Add" button. The importing process should start automatically. Once it's done, TTG is ready to be used in the project.
 
@@ -236,10 +236,10 @@ Technical aspects of TTG were described in the following blogs posts:
 - [Adding more detail to Terraced Terrain Generator using Perlin noise octaves](https://blog.matheusamazonas.net/posts/ttg_octaves).
 
 ## Contributing
-If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/ttg/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless if it's in the roadmap or not), [contact the developer](https://matheusamazonas.net/contact.html).  
+If you would like to report e bug, please create an [issue](https://github.com/lazysquirrellabs/ttg/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature (regardless if it's in the roadmap or not), [contact the developer](https://matheusamazonas.net/contact.html).  
 
 ## Getting help
-Use the [issues page](https://github.com/matheusamazonas/ttg/issues) if there's a problem with your TTG setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
+Use the [issues page](https://github.com/lazysquirrellabs/ttg/issues) if there's a problem with your TTG setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
 
 ## License
-Terraced Terrain Generator is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/TTG/blob/master/LICENSE) file in TTG's repository.
+Terraced Terrain Generator is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/lazysquirrellabs/TTG/blob/master/LICENSE) file in TTG's repository.
